@@ -1,0 +1,37 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+"""""""" plugin list
+call vundle#begin()
+
+Plugin 'Vundle/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-airline/vim-airline'
+" Plugin 'tpope/vim-fugitive'
+" Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/nerdtree'
+" Plugin 'kien/ctrlp.vim'
+" Plugin 'tpope/vim-surround'
+Plugin 'klen/python-mode'
+" Plugin 'mattn/emmet-vim'
+" Plugin 'klen/python-mode'
+" Plugin 'easymotion/vim-easymotion'
+" Plugin 'majutsushi/tagbar'
+" Plugin 'UltiSnips'
+" Plugin 'scrooloose/nerdcommenter'
+" Plugin 'plasticboy/vim-markdown'
+" Plugin 'Shougo/neocomplete.vim'
+" Plugin 'nathanaelkane/vim-indent-guides'
+call vundle#end()
+
+"""""""" plugin config
+"""" use solarized colorscheme
+colorscheme solarized
+
+"""" airline config
+set laststatus=2
+set t_Co=256
+let g:airline#extensions#tabline#enabled = 1
+
